@@ -1,0 +1,10 @@
+<div class="container mt-4">
+  <h1><%= @task.title %></h1>
+  <p><%= @task.details %></p>
+  <%= link_to edit_task_path(@task), class: "btn btn-primary me-2" do %>
+    <i class="fa-solid fa-pen"></i> Edit
+  <% end %>
+
+  <%= link_to "Back to list", "/tasks", class: "btn btn-secondary"%>
+
+</div>
